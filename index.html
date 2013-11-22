@@ -1,30 +1,24 @@
-Pie-Chart
-=========
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pie Chart</title>
+  <link rel="stylesheet" href="css/app.css"/>
+  <script src="js/jquery.js"></script>
+  <script src="js/d3.v3.min.js" charset="utf-8"></script>
+  <script src="js/pie-chart.js"></script>
 
-Pie chart using D3.js
+</head>
+<body>
 
-##Usage:
-
-###Description
-
-- This plugin generate pie graph with titles for each sectors and description light box for you details.
-- Here using a json format for your data
-
-###Html example
-
-```
-//Box for pie graph
 <div id="pieChart"></div>
-//Box for light box with details
+
 <div id="pieLightBox">
   <h3 class="title"></h3>
   <div class="desc"></div>
 </div>
-```
 
-###Data in Json format
 
-```
+
 <script>
   var data = [
     {
@@ -58,33 +52,19 @@ Pie chart using D3.js
       "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. "
     }
   ];
+
+
+  $('#pieChart').pieChart({
+    data: data,
+    lightBox: '#pieLightBox',
+    width: 750,
+    height: 750,
+    radius: 200,
+    innerRadius: 80
+  });
+
+
 </script>
-```
 
-###JS
-
-```
-<script>
-$('#pieChart').pieChart({
-  data: data,
-  lightBox: '#pieLightBox',
-  width: 750,
-  height: 750,
-  radius: 200,
-  innerRadius: 80
-});
-</script>
-```
-
-###Options for Static maps
-
-- **width** - width of svg element,
-- **height** - height of svg element
-- **radius** - radius of a circle
-- **innerRadius** - inner radius of the circle
-- **data** - data in json format
-- **lightBox** - light box id or unique class
-- **title** - title box class inside of the light box
-- **desc** - description box class inside of light box
-- **labelColor** - color of labels
-- **labelActive** - color for active lable
+</body>
+</html>
