@@ -78,13 +78,13 @@ $('#pieChart').pieChart({
 
 ###Options
 
-- **width** - width of svg element,
-- **height** - height of svg element
-- **radius** - radius of a circle
-- **innerRadius** - inner radius of the circle
+- **width** - width of svg element (400)
+- **height** - height of svg element (500)
+- **radius** - radius of a circle (100 or 150 ...)
+- **innerRadius** - inner circle radius (40 or 60 ...)
 - **data** - data in json format
-- **lightBox** - light box id or unique class
-- **title** - title box class inside of the light box
-- **desc** - description box class inside of light box
-- **labelColor** - color of labels
-- **labelActive** - color for active lable
+- **lightBox** - light box id or unique class ('#pieLightBox')
+- **title** - title box class inside of the light box ('.title')
+- **desc** - description box class inside of light box ('.desc')
+- **labelColor** - color of labels ( "red" or "#00000" ...)
+- **labelActive** - color for active label ( "red" or "#00000" ...)
