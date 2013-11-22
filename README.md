@@ -76,7 +76,7 @@ $('#pieChart').pieChart({
 </script>
 ```
 
-###Options for Static maps
+###Options
 
 - **width** - width of svg element,
 - **height** - height of svg element
