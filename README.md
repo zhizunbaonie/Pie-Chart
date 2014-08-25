@@ -5,7 +5,7 @@ Pie chart using D3.js
 
 ##Usage:
 
-####[Demo](http://rubiklabs.com/shved/github/Pie-Chart/)
+####[Demo](http://shved.me/git/Pie-Chart/)
 ###Description
 
 - This plugin generate pie graph with titles for each sectors and description light box for you details.
